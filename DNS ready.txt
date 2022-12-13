@@ -1,0 +1,23 @@
+var text = document.querySelectorAll('.ui-link_black')					//0 + 4*n
+var img = document.querySelectorAll('.catalog-product__image')
+var price = document.querySelectorAll('.product-buy__price')				// всё работает :)
+
+$('.products-list__content').remove()							//delete all
+											//rewrite
+var n = 0
+var a1, a2, a3
+$('.products-list ').append('<div class="container spat_xochy"></div>')
+$('.spat_xochy').append('<div class="row srat_xochu"></div>')
+while (n != 18)
+{
+	a1 = '<div class="col l4 m6 s12 zabil' + n + '" style="height: 500px;" ></div>'
+	a2 = '.zabil' + n
+	$('.srat_xochu').append(a1);
+	$(a2).append(img[n]);
+	$(a2).append(text[n*4]);
+	$(a2).append(price[n]);
+	n = n + 1;
+}
+
+
+$('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">')
