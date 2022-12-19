@@ -1,4 +1,4 @@
-var text = document.querySelectorAll('.ui-link_black')					//0 + 4*n
+var text = document.querySelectorAll('.catalog-product__name')					//0 + 4*n
 var img = document.querySelectorAll('.catalog-product__image')
 var price = document.querySelectorAll('.product-buy__price')				// всё работает :)
 
@@ -10,11 +10,11 @@ $('.products-list ').append('<div class="container spat_xochy"></div>')
 $('.spat_xochy').append('<div class="row srat_xochu"></div>')
 while (n != 18)
 {
-	a1 = '<div class="col l4 m6 s12 zabil' + n + '" style="height: 500px;" ></div>'
+	a1 = '<div class="col l4 m6 s12 zabil' + n + '" style="height: 600px;" ></div>'
 	a2 = '.zabil' + n
 	$('.srat_xochu').append(a1);
 	$(a2).append(img[n]);
-	$(a2).append(text[n*4]);
+	$(a2).append(text[n]);
 	$(a2).append(price[n]);
 	n = n + 1;
 }
